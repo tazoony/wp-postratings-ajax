@@ -1,0 +1,1 @@
+function post_ratings_results_ajax(post_id, dom_selector){$.ajax({url: '/wp-admin/admin-ajax.php',type: 'GET',dataType: 'html',data: {action:'postratingsresults',pid:post_id},}).done(function(data){$(dom_selector).html(data);});}
